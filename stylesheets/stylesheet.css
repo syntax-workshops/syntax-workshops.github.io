@@ -12,6 +12,10 @@ html {
   -ms-text-size-adjust: 100%; /* 2 */
 }
 
+a {
+    transition: .2s;
+}
+
 /**
  * Remove default margin.
  */
@@ -525,6 +529,16 @@ a.button {
   font-size: 23px;
   line-height: 1.2;
   color: #fff;
+}
+#content-wrapper a.button {
+    color: #2879d0;
+    border: 1px solid #2879d0;
+    border-radius: 4px;
+    padding: .25em .5em !important;
+}
+#content-wrapper a.button:hover {
+    color: #fff;
+    background-color: #2879d0;
 }
 a.button small {
   display: block;
