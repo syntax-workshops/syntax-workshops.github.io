@@ -14,6 +14,12 @@ Tijdens deze workshop gaan we twee projecten doen. Je mag kiezen welke je wilt m
 We bestellen met zijn allen de nodige onderdelen (of je bestelt ze zelf),
 waarna we ze op **18 mei vanaf 16:00** gezamenlijk bouwen en testen op Hogeschool Leiden (lokaal tbd).
 
+Het idee is dat iedereen met een werkende LED strip en/of domotica Pi naar huis gaat. Voor de workshop is geen ervaring
+met solderen, elektronica, of programmeren vereist! Je hoeft alleen lid van Syntax te zijn. :)
+
+De code, ontwerpen en instructies voor de projecten zijn allemaal open-source (MIT license),
+dus kun je het aanpassen zoals je zelf wilt!
+
 ## LED strip met WiFi
 
 <a href="https://syntaxleiden.nl/static/workshop/jacek-led-strip.jpg"><img src="https://syntaxleiden.nl/static/workshop/jacek-led-strip.jpg" style="width: 30%; float: right;" /></a>
