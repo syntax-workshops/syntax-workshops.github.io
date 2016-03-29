@@ -22,7 +22,9 @@ dus kun je het aanpassen zoals je zelf wilt!
 
 ## Inschrijven
 
-Je kunt jezelf aanmelden voor deze workshop via [dit Google form](http://goo.gl/forms/DyqEM4lcrh)!
+Je kunt jezelf aanmelden voor de workshop via [dit Google form](http://goo.gl/forms/DyqEM4lcrh)!
+
+<a class="button" href="http://goo.gl/forms/DyqEM4lcrh">Inschrijven &rarr;</a>
 
 ## LED strip met WiFi
 
