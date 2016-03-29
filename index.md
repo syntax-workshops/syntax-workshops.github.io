@@ -12,13 +12,17 @@ Nu is je kans. De activiteitencommissie van Syntax presenteert: de domotica work
 Tijdens deze workshop gaan we twee projecten doen. Je mag kiezen welke je wilt maken. Alles kan, alles mag. :)
 
 We bestellen met zijn allen de nodige onderdelen (of je bestelt ze zelf),
-waarna we ze op **18 mei vanaf 16:00** gezamenlijk bouwen en testen op Hogeschool Leiden (lokaal tbd).
+waarna we ze op **19 mei vanaf 17:00** gezamenlijk in elkaar zetten en testen op Hogeschool Leiden (lokaal tbd).
 
 Het idee is dat iedereen met een werkende LED strip en/of domotica Pi naar huis gaat. Voor de workshop is geen ervaring
 met solderen, elektronica, of programmeren vereist! Je hoeft alleen lid van Syntax te zijn. :)
 
 De code, ontwerpen en instructies voor de projecten zijn allemaal open-source (MIT license),
 dus kun je het aanpassen zoals je zelf wilt!
+
+## Inschrijven
+
+Je kunt jezelf aanmelden voor deze workshop via [dit Google form](http://goo.gl/forms/DyqEM4lcrh)!
 
 ## LED strip met WiFi
 
