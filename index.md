@@ -94,4 +94,6 @@ vooral mee!
 
 # Formulier onderdelen inkopen
 
-Dit komt binnenkort!
+Mocht je liever ons onderdelen laten bestellen kan dit via het inschrijf formulier. De link hiervoor is onder het kopje Inschrijven te vinden.
+
+Voor deze bestelling is het nodig dat je de onderdelen aanvinkt die je nog nodig hebt. Wij bestellen deze dan voor je in China en nemen ze mee naar de workshop. Het bestel proces van Ali Express is niet bijzonder en gebruikt gewoon iDeal. Je kunt het dus ook zelf bestellen. Dan krijg je het ook gewoon netjes zelf thuis :)
