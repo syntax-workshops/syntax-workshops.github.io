@@ -1,4 +1,4 @@
----
+﻿---
 layout: default
 title: Domotica workshop
 ---
@@ -95,9 +95,10 @@ vooral mee!
 
 # Formulier onderdelen inkopen
 
-Mocht je liever gezamenlijk met ons de onderdelen bestellen, dan kan dit via het inschrijfformulier.
-Hiervoor vink je de onderdelen aan die je nog nodig hebt. Wij bestellen deze dan voor je in China en nemen ze mee naar de workshop. 
+Inmiddels zijn voor de ingeschreven mensen de onderdelen al besteld. Een aantal onderdelen zijn al binnen!
 
-Het bestelproces van AliExpress is niet bijzonder en gebruikt gewoon iDeal. **Je kunt het dus ook zelf bestellen**. Dan krijg je het ook gewoon netjes zelf thuis :)
+![Packing Parts](images/packing.jpg)
+
+Je kunt je nogsteeds inschrijven voor de workshop. Wij kunnen alleen de onderdelen niet meer voor je bestellen. Zie "Wat moet ik hebben" voor de partslist :)
 
 <a class="button" href="http://goo.gl/forms/DyqEM4lcrh">Inschrijven &rarr;</a>
