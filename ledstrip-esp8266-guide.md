@@ -1,19 +1,19 @@
 ---
 layout: default
-title: How-to: LED strip aansturen met esp8266
+title: How-to: LED strip aansturen met een esp8266 (nodemcu) controller
 ---
 
 # Doel van het project
 
-Bij dit project stuur je een RGB LED strip (ws2812b) aan met een Nodemcu microcontroller (gebaseerd op de esp8266 SoC). De LED strip is een lange strook met felle LED's erop, die je *individueel* in een willekeurige kleur kunt laten schijnen.
+Bij dit project stuur je een RGB LED strip (ws2812b) aan met een Nodemcu microcontroller (gebaseerd op de esp8266 SoC). De LED strip is een lange strook met felle LED's erop, die je *individueel* in een willekeurige kleur licht kunt laten geven.
 
 De Nodemcu beschikt over wifi, waardoor je de LED strip met een (open-source) smartphone app kunt besturen.
+Het is ook mogelijk om fysieke bedieningsknoppen toe te voegen aan dit project. Maar om het simpel te houden beperken wij ons nu tot bediening via het netwerk.
 
-Het is ook mogelijk om een fysiek bedieningspaneel te bouwen voor de strip. Maar om het simpel te houden beperkt deze workshop zich tot de app.
+# Inhoud
 
-# Inhoudsopgave
-
-* [Over de esp8266](#over-de-esp8266)
+* [Over de esp8266 microcontroller](#over-de-esp8266)
+* [Benodigdheden](#benodigdheden)
 * [Hardware](#hardware)
   * [Aansluiten](#aansluiten)
 * [Software](#software)
@@ -35,6 +35,26 @@ De belangrijkste features die het biedt zijn:
 * ADC (analog to digital converter) pin
 * 4Mb flash geheugen
 
+# Benodigdheden
+
+## Onderdelen
+
+* Nodemcu dev board
+* ws2812b LED strip (RGB)
+* 5v voeding van 4a (ampere) of meer, afhankelijk van de led strip
+* Perfboard
+* Generiek aansluit kabel (koper)
+* Condensator van 1000µf (micro farad)
+* Weerstand van 220Ω (ohm)
+* Voedings tonnetje
+
+## Gereedschap
+
+* Soldeerbout of liever een soldeerstation
+* Draden strip tang
+* Fijne knijptang
+* Schaar
+
 # Hardware
 
 In deze handleiding gebruiken we de Nodemcu developer kit. Dit apparaatje voegt nuttige functionaliteit toe aan een "kale" esp-12e module, namelijk een micro-USB aansluiting, 5 volt regulator en een on-board programmer.
@@ -44,15 +64,12 @@ De pin aansluitingen op de module zijn als volgt:
 
 ![Pin definitie van de nodemcu. [Bron](#)](nodemcu_devkit_v1.0_pinmap.png)
 
-## Onderdelen
-
-Kopiëren van BOM
-
 ### Voeding
 
-De esp8266 gebruikt weinig stroom; maximaal 400 mA (milliampere) op 3,3 volt.
+De esp8266 SoC gebruikt weinig stroom; maximaal 400 mA (milliampere) op 3,3 volt. De nodemcu accepteert net als de strip 5v en zet dit automatisch om.
 
-De LED strip is echter zeer hongerig voor stroom.
+De LED strip is echter zeer hongerig voor stroom. Reken op *x* mA per LED. De strips die we voor deze workshop aanbevelen hebben 30 LED's per meter.
+**TODO**: Stroom vereisten
 
 ## Aansluiten
 
