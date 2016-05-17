@@ -20,12 +20,6 @@ met solderen, elektronica, of programmeren vereist! Je hoeft alleen lid van Synt
 De code, ontwerpen en instructies voor de projecten zijn allemaal open-source (MIT license),
 dus kun je het aanpassen zoals je zelf wilt!
 
-## Inschrijven
-
-Je kunt jezelf aanmelden voor de workshop via [dit Google form](http://goo.gl/forms/DyqEM4lcrh)!
-
-<a class="button" href="http://goo.gl/forms/DyqEM4lcrh">Inschrijven &rarr;</a>
-
 ## LED strip met WiFi
 
 <a href="https://syntaxleiden.nl/static/workshop/jacek-led-strip.jpg"><img src="https://syntaxleiden.nl/static/workshop/jacek-led-strip.jpg" style="width: 30%; float: right;" /></a>
@@ -34,7 +28,7 @@ Voor dit project stuur je RGB LED strip aan op afstand over je netwerk. Hiermee 
 
 Het brein hierachter is de esp8266 chip. Deze microcontroller kost €2,50 en verbind met je wifi netwerk. Met open-source software die wij voor je geschreven hebben kun je deze besturen vanaf je smarthpone (iPhone en Android).
 
-<a class="button" href="lampen-433-mhz-guide.html">Ga naar instructies &rarr;</a>
+<a class="button" href="ledstrip-esp8266-guide.html">Ga naar instructies &rarr;</a>
 
 <a class="button" href="https://github.com/syntax-workshops">Ga naar code &rarr;</a>
 
@@ -50,9 +44,9 @@ Net als ons liever lui dan moe? Deze workshop komt met een open-source app en se
 
 <a href="https://syntaxleiden.nl/static/workshop/help-me.gif"><img src="https://syntaxleiden.nl/static/workshop/help-me.gif" style="width: 30%; float: right;" /></a>
 
-<a class="button" href="https://github.com/syntax-workshops">Ga naar instructies &rarr;</a>
+<a class="button" href="lampen-433mhz-guide.html">Ga naar instructies &rarr;</a>
 
-<a class="button" href="https://github.com/syntax-workshops/node-mqtt-433mhz">Ga naar project &rarr;</a>
+<a class="button" href="https://github.com/syntax-workshops/node-mqtt-433mhz">Ga naar de code &rarr;</a>
 
 <div style="clear: both; width: 100%;"></div>
 
@@ -96,12 +90,3 @@ vooral mee!
 * Soldeertin
 * Kniptang
 * Multimeter
-
-# Formulier onderdelen inkopen
-
-Mocht je liever gezamenlijk met ons de onderdelen bestellen, dan kan dit via het inschrijfformulier.
-Hiervoor vink je de onderdelen aan die je nog nodig hebt. Wij bestellen deze dan voor je in China en nemen ze mee naar de workshop. 
-
-Het bestelproces van AliExpress is niet bijzonder en gebruikt gewoon iDeal. **Je kunt het dus ook zelf bestellen**. Dan krijg je het ook gewoon netjes zelf thuis :)
-
-<a class="button" href="http://goo.gl/forms/DyqEM4lcrh">Inschrijven &rarr;</a>
