@@ -1,6 +1,6 @@
 ---
 layout: default
-title: How-to: Lampen aansturen met een Raspberry Pi
+title: How-to - Lampen aansturen met een Raspberry Pi
 ---
 
 # Doel van het project
@@ -34,7 +34,7 @@ De hardware setup van dit project is uitermate eenvoudig.
 * Sluit de aarde pin van de transmitter aan op pin 6 van de pi (GND).
 * Sluit de datapin van de transmitter aan op pin 8 van de pi (TX).
 
-![De pin aansluitingen (pinout) van de Raspberry pi 2 en 3](images/raspberry_pi_2_pinout.jpg)
+![De pin aansluitingen (pinout) van de Raspberry pi 2 en 3](lights-images/raspberry_pi_2_pinout.jpg)
 
 Als je klaar bent ziet dit er als volgt uit:
 

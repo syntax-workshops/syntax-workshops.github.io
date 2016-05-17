@@ -1,6 +1,6 @@
 ---
 layout: default
-title: How-to: LED strip aansturen met een esp8266 (nodemcu) controller
+title: How-to - LED strip aansturen met een esp8266 (nodemcu) controller
 ---
 
 # Doel van het project
@@ -47,7 +47,7 @@ De belangrijkste features die het biedt zijn:
 * Weerstand van 470Ω (ohm) (optioneel)
 * Voedings tonnetje
 
-## Gereedschap
+## Gereedschappen
 
 * Soldeerbout of liever een soldeerstation
 * Draden strip tang
@@ -72,7 +72,9 @@ De LED strip is echter zeer hongerig voor stroom. Reken op *x* mA per LED. De st
 
 ## Aansluiten
 
-**TODO**: Schematics voor het aansluiten
+Het aansluiten van dit project gaat als volgt:
+
+![Pin definitie van de nodemcu](ledstrip-images/Ledstrip_bb.png)
 
 # Software
 
