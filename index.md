@@ -28,7 +28,9 @@ Voor dit project stuur je RGB LED strip aan op afstand over je netwerk. Hiermee 
 
 Het brein hierachter is de esp8266 chip. Deze microcontroller kost €2,50 en verbind met je wifi netwerk. Met open-source software die wij voor je geschreven hebben kun je deze besturen vanaf je smarthpone (iPhone en Android).
 
-<a class="button" href="https://github.com/syntax-workshops">Ga naar project &rarr;</a>
+<a class="button" href="lampen-433-mhz-guide.html">Ga naar instructies &rarr;</a>
+
+<a class="button" href="https://github.com/syntax-workshops">Ga naar code &rarr;</a>
 
 <a href="https://syntaxleiden.nl/static/workshop/led-hond.gif"><img src="https://syntaxleiden.nl/static/workshop/led-hond.gif" style="width: 30%; float: right; clear: both;" /></a>
 
@@ -42,7 +44,9 @@ Net als ons liever lui dan moe? Deze workshop komt met een open-source app en se
 
 <a href="https://syntaxleiden.nl/static/workshop/help-me.gif"><img src="https://syntaxleiden.nl/static/workshop/help-me.gif" style="width: 30%; float: right;" /></a>
 
-<a class="button" href="https://github.com/syntax-workshops">Ga naar project &rarr;</a>
+<a class="button" href="https://github.com/syntax-workshops">Ga naar instructies &rarr;</a>
+
+<a class="button" href="https://github.com/syntax-workshops/node-mqtt-433mhz">Ga naar project &rarr;</a>
 
 <div style="clear: both; width: 100%;"></div>
 

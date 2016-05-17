@@ -20,8 +20,7 @@ Het is ook mogelijk om fysieke bedieningsknoppen toe te voegen aan dit project. 
   * [Firmware flashen](#aansluiten)
   * [Espixel installeren](#)
   * [Aansturen via Python](#)
-  * [iOS app installeren](#)
-  * [Android app installeren](#)
+  * [Smartphone apps](#apps)
 
 # Over de esp8266
 
@@ -45,7 +44,7 @@ De belangrijkste features die het biedt zijn:
 * Perfboard
 * Generiek aansluit kabel (koper)
 * Condensator van 1000µf (micro farad)
-* Weerstand van 220Ω (ohm)
+* Weerstand van 470Ω (ohm) (optioneel)
 * Voedings tonnetje
 
 ## Gereedschap
@@ -62,9 +61,9 @@ Hierdoor heb je geen losse USB FTDI of *voltage regulator* nodig.
 
 De pin aansluitingen op de module zijn als volgt:
 
-![Pin definitie van de nodemcu. [Bron](#)](nodemcu_devkit_v1.0_pinmap.png)
+![Pin definitie van de nodemcu](ledstrip-images/nodemcu_devkit_v1.0_pinmap.png)
 
-### Voeding
+## Voeding
 
 De esp8266 SoC gebruikt weinig stroom; maximaal 400 mA (milliampere) op 3,3 volt. De nodemcu accepteert net als de strip 5v en zet dit automatisch om.
 
@@ -84,15 +83,16 @@ Je hebt twee opties om je module te programmeren:
 
 Voor de workshop gebruiken we Lua, omdat dit aanzienlijk makkelijker is om mee te beginnen dan C.
 
-C is echter een uitstekende keuze als je meer of complexere code wilt dan met Nodemcu Lua mogelijk is.
+C is echter een uitstekende keuze als performance belangrijk is, of je (low-level) dingen wilt doen die in Nodemcu Lua niet kunnen.
 
 ## Firmware flashen
 
 TODO: Esptool, luatool
 
-## Espixel installeren
+## Lua programma installeren
 
-TODO
+[De code voor LedControl.Nodemcu staat op GitHub](https://github.com/syntax-workshops/LedControl.Nodemcu).
+Zie de instructies in de README voor installatie.
 
 ## Aansturen via Python
 
@@ -100,25 +100,26 @@ TODO
 # add code here
 ```
 
-## iOS app installeren
+## Apps
 
-Voor dit project is een open-source app gebouwd door Mathijs. Bekijk de source code en instructies [hier](#)
+Voor dit project zijn open-source apps gebouwd voor iOS en Android. Bekijk de source code en instructies hier:
 
-## Android app installeren
+* [iOS](https://github.com/syntax-workshops/LedControl.iOS)
+* [Android](https://github.com/syntax-workshops/LedControl.Android)
 
-Voor dit project is een open-source app gebouwd door Mathijs. Bekijk de source code en instructies [hier](#)
+# Bronnen
 
-# Resources
+* [LED strip aansluiten op een Arduino](https://learn.adafruit.com/adafruit-neopixel-uberguide/basic-connections)
 
 ## Handige software tools
 
-* Flashen van je firmware: https://github.com/themadinventor/esptool
-* Uploaden van lua code: https://github.com/4refr0nt/luatool
+* [Flashen van je firmware](https://github.com/themadinventor/esptool)
+* [Uploaden van lua code](https://github.com/4refr0nt/luatool)
 
 ## Hardware specificaties
 
-* Nodemcu dev kit specificiaties: https://github.com/nodemcu/nodemcu-devkit-v1.0
+* [Nodemcu dev kit specificiaties](https://github.com/nodemcu/nodemcu-devkit-v1.0)
 
 ## API Documentatie
 
-* Nodemcu docs: http://nodemcu.readthedocs.org/en/dev/en/upload/
+* [Nodemcu docs](http://nodemcu.readthedocs.org/en/dev/en/upload/)
