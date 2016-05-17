@@ -17,15 +17,14 @@ Het is ook mogelijk om fysieke bedieningsknoppen toe te voegen aan dit project. 
 * [Hardware](#hardware)
   * [Aansluiten](#aansluiten)
 * [Software](#software)
-  * [Firmware flashen](#aansluiten)
-  * [Espixel installeren](#)
-  * [Aansturen via Python](#)
+  * [Firmware flashen en Lua code uploaden](#aansluiten)
+  * [Aansturen over UDP met Python](#firmware-flashen-en-lua-code-uploaden)
   * [Smartphone apps](#apps)
 
 # Over de esp8266
 
 De esp8266 is een microcontroller die in 2014 is uitgebracht door Espressif Systems. Het is een betaalbare module, ontworpen om elektronica eenvoudig met het internet te verbinden (*internet of things*).
-Het kan net als een Arduino geprogrammeerd worden in C met de Arduino IDE. Ook is er een Nodemcu firmware die gebaseerd is op Lua. Hiermee kun je de module programmeren met Lua scripts.
+Het kan net als een Arduino geprogrammeerd worden in C met de Arduino IDE. Ook is er een firmware die gebaseerd is op Lua. Hiermee kun je de module programmeren met Lua scripts.
 
 De belangrijkste features die het biedt zijn:
 
@@ -35,6 +34,8 @@ De belangrijkste features die het biedt zijn:
 * 4Mb flash geheugen
 
 # Benodigdheden
+
+Voor dit project heb je de volgende dingen nodig:
 
 ## Onderdelen
 
@@ -49,17 +50,18 @@ De belangrijkste features die het biedt zijn:
 
 ## Gereedschappen
 
-* Soldeerbout of liever een soldeerstation
-* Draden strip tang
+* Soldeerbout of een soldeerstation (beter)
+* Draden striptang
 * Fijne knijptang
 * Schaar
 
 # Hardware
 
-In deze handleiding gebruiken we de Nodemcu developer kit. Dit apparaatje voegt nuttige functionaliteit toe aan een "kale" esp-12e module, namelijk een micro-USB aansluiting, 5 volt regulator en een on-board programmer.
+In deze guide gebruiken we de Nodemcu developer kit.
+Dit apparaatje voegt nuttige functionaliteit toe aan een "kale" esp8266 module, namelijk een micro-USB aansluiting, 5 volt regulator en een on-board programmer.
 Hierdoor heb je geen losse USB FTDI of *voltage regulator* nodig.
 
-De pin aansluitingen op de module zijn als volgt:
+De pin aansluitingen op de Nodemcu module zijn als volgt:
 
 ![Pin definitie van de nodemcu](ledstrip-images/nodemcu_devkit_v1.0_pinmap.png)
 
@@ -67,14 +69,18 @@ De pin aansluitingen op de module zijn als volgt:
 
 De esp8266 SoC gebruikt weinig stroom; maximaal 400 mA (milliampere) op 3,3 volt. De nodemcu accepteert net als de strip 5v en zet dit automatisch om.
 
-De LED strip is echter zeer hongerig voor stroom. Reken op *x* mA per LED. De strips die we voor deze workshop aanbevelen hebben 30 LED's per meter.
-**TODO**: Stroom vereisten
+De LED strip is echter hongerig voor stroom. Onze strip van 5 meter (30 leds per meter) had bijna 3 ampere nodig om volledig wit licht te geven.
+De strips die we voor deze workshop aanbevelen zijn van 30 LED's per meter.
 
 ## Aansluiten
 
-Het aansluiten van dit project gaat als volgt:
+![Aansluiting van het project](ledstrip-images/Ledstrip_bb.png)
 
-![Pin definitie van de nodemcu](ledstrip-images/Ledstrip_bb.png)
+Opmerkingen:
+
+* De nodemcu en de LED strip worden door dezelfde voeding voorzien van stroom.
+* De condensator is nodig om je strip te beschermen tegen de eerste instroom van spanning. Als die er niet is werkt het wel, maar kan de strip schade oplopen.
+* De weerstand beschermt de eerste LED op je strip tegen spanning van de nodemcu.
 
 # Software
 
@@ -84,39 +90,38 @@ Je hebt twee opties om je module te programmeren:
 * Lua (met nodemcu API's)
 
 Voor de workshop gebruiken we Lua, omdat dit aanzienlijk makkelijker is om mee te beginnen dan C.
-
 C is echter een uitstekende keuze als performance belangrijk is, of je (low-level) dingen wilt doen die in Nodemcu Lua niet kunnen.
 
-## Firmware flashen
-
-TODO: Esptool, luatool
-
-## Lua programma installeren
+## Firmware flashen en Lua code uploaden
 
 [De code voor LedControl.Nodemcu staat op GitHub](https://github.com/syntax-workshops/LedControl.Nodemcu).
 Zie de instructies in de README voor installatie.
 
+<a class="button" href="https://github.com/syntax-workshops/LedControl.Nodemcu/blob/master/README.md">Ga naar instructies &rarr;</a>
+
 ## Aansturen via Python
 
-```python
-# add code here
-```
+Voorbeeldcode om de LED strip met je eigen code aan te sturen [vind je in de LedControl.Nodemcu repository](https://github.com/syntax-workshops/LedControl.Nodemcu/tree/master/example-clients).
+De voorbeelden zijn geschreven in Python. Maar omdat het standaard UDP gebruikt kun je iedere programmeertaal die je wilt gebruiken. :)
+
+<a class="button" href="https://github.com/syntax-workshops/LedControl.Nodemcu/tree/master/example-clients">Ga naar de voorbeeldcode &rarr;</a>
 
 ## Apps
 
 Voor dit project zijn open-source apps gebouwd voor iOS en Android. Bekijk de source code en instructies hier:
 
-* [iOS](https://github.com/syntax-workshops/LedControl.iOS)
-* [Android](https://github.com/syntax-workshops/LedControl.Android)
+<a class="button" href="https://github.com/syntax-workshops/LedControl.iOS">Ga naar de iOS app &rarr;</a>
+
+<a class="button" href="https://github.com/syntax-workshops/LedControl.Android">Ga naar de Android app &rarr;</a>
 
 # Bronnen
 
-* [LED strip aansluiten op een Arduino](https://learn.adafruit.com/adafruit-neopixel-uberguide/basic-connections)
+* [Adafruit: LED strip aansluiten op een Arduino](https://learn.adafruit.com/adafruit-neopixel-uberguide/basic-connections)
 
 ## Handige software tools
 
 * [Flashen van je firmware](https://github.com/themadinventor/esptool)
-* [Uploaden van lua code](https://github.com/4refr0nt/luatool)
+* [Uploaden van Lua code](https://github.com/4refr0nt/luatool)
 
 ## Hardware specificaties
 
@@ -124,4 +129,4 @@ Voor dit project zijn open-source apps gebouwd voor iOS en Android. Bekijk de so
 
 ## API Documentatie
 
-* [Nodemcu docs](http://nodemcu.readthedocs.org/en/dev/en/upload/)
+* [Nodemcu Lua docs](http://nodemcu.readthedocs.org/en/dev/en/upload/)
