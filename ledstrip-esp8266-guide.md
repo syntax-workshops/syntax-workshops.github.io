@@ -74,7 +74,7 @@ De strips die we voor deze workshop aanbevelen zijn van 30 LED's per meter.
 
 ## Aansluiten
 
-![Aansluiting van het project](ledstrip-images/Ledstrip_bb.png)
+![Aansluiting van het project](ledstrip-images/workshop_ledstrip_bb.png)
 
 Opmerkingen:
 
